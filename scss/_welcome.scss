@@ -1,0 +1,156 @@
+.welcome {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	margin-top: 7rem;
+	@media (max-width: 480px) {
+		margin-top: 4rem;
+	}
+
+	&__information {
+		width: 40%;
+		margin: auto;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		@media (max-width: 1400px) {
+			width: 70%;
+		}
+		@media (max-width: 768px) {
+			width: 80%;
+		}
+	}
+
+	&__title {
+		font-size: 6rem;
+		font-weight: 600;
+		line-height: 1;
+		@media (max-width: 768px) {
+			font-size: 5rem;
+		}
+		@media (max-width: 480px) {
+			font-size: 4rem;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.8rem;
+		margin: 0 auto;
+	}
+
+	&__plane {
+		position: absolute;
+		bottom: -18rem;
+		max-width: 90%;
+		height: auto;
+		margin-top: 0;
+		z-index: 1;
+		pointer-events: none;
+		user-select: none;
+		left: 51%;
+		transform: translateX(-50%);
+		margin-left: -5rem;
+		will-change: transform;
+
+		@media (max-height: 820px) and (min-width: 1600px) {
+			bottom: -28rem;
+		}
+
+		@media (max-width: 1400px) {
+			bottom: -20rem;
+			max-width: 100%;
+		}
+		@media (max-width: 1200px) {
+			bottom: -18rem;
+		}
+		@media (max-width: 768px) {
+			bottom: -14rem;
+			max-width: 135%;
+		}
+		@media (max-width: 480px) {
+			bottom: -10rem;
+			max-width: 130%;
+		}
+	}
+
+	&__bg-clouds {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		pointer-events: none;
+		user-select: none;
+
+		img {
+			position: absolute;
+			user-select: none;
+
+			&.left-cloud {
+				top: -15rem;
+				left: -10rem;
+				width: 40vw;
+
+				@media (max-width: 1200px) {
+					top: -13rem;
+					left: -6rem;
+					width: 40vw;
+				}
+				@media (max-width: 768px) {
+					top: -8rem;
+					left: -2rem;
+				}
+			}
+
+			&.main-cloud {
+				top: 0;
+				left: 49%;
+				transform: translateX(-50%);
+				width: 75vw;
+				@media (max-width: 1200px) {
+					width: 80vw;
+					top: 2.5rem;
+				}
+				@media (max-width: 768px) {
+					width: 95vw;
+				}
+			}
+			&.right-cloud {
+				top: -5rem;
+				right: -13rem;
+				width: 30vw;
+				transform: rotate(10deg);
+				@media (max-width: 1200px) {
+					right: -17rem;
+					width: 40vw;
+				}
+				@media (max-width: 768px) {
+					right: -10rem;
+					top: -8rem;
+				}
+			}
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -8rem;
+		z-index: 2;
+		background: radial-gradient(
+			ellipse at 50% 30%,
+			rgba(110, 135, 175, 0.07) 0%,
+			transparent 75%
+		);
+		pointer-events: none;
+	}
+}

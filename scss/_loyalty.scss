@@ -1,0 +1,45 @@
+.loyalty {
+	margin-top: 20rem;
+	@media (max-width: 1400px) {
+		margin-top: 20rem;
+	}
+	> div {
+		display: flex;
+		flex-direction: column;
+
+		.loyalty__top {
+			margin-left: auto;
+			max-width: max-content;
+			will-change: transform;
+		}
+
+		.loyalty__image {
+			position: absolute;
+			left: -18rem;
+			top: 18rem;
+			max-width: 145%;
+			height: auto;
+			will-change: transform;
+
+			@media (max-width: 1400px) {
+				top: -8rem;
+			}
+
+			@media (max-width: 1200px) {
+				top: -5rem;
+			}
+		}
+
+		.loyalty__bottom {
+			margin-top: 17rem;
+			will-change: transform;
+
+			@media (max-width: 1400px) {
+				margin-top: 15rem;
+			}
+			@media (max-width: 1200px) {
+				margin-top: 12rem;
+			}
+		}
+	}
+}
