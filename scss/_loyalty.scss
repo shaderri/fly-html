@@ -22,11 +22,21 @@
 			will-change: transform;
 
 			@media (max-width: 1400px) {
-				top: -8rem;
+				top: 17rem;
 			}
 
 			@media (max-width: 1200px) {
-				top: -5rem;
+				top: 17rem;
+			}
+			@media (max-width: 768px) {
+				top: 17rem;
+				max-width: none;
+				width: 130%;
+			}
+			@media (max-width: 480px) {
+				top: 13rem;
+				max-width: none;
+				width: 135%;
 			}
 		}
 

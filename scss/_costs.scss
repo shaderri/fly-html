@@ -62,15 +62,17 @@
 				z-index: 1;
 			}
 			@media (max-width: 992px) {
-				top: 15rem;
-				left: -3rem;
+				top: 13rem;
 			}
 			@media (max-width: 768px) {
-				top: 12rem;
+				top: 9rem;
+				max-width: none;
+				width: 120%;
 			}
 			@media (max-width: 480px) {
-				top: 10rem;
-				max-width: 140%;
+				top: 6.5rem;
+				max-width: none;
+				width: 130%;
 			}
 		}
 		.costs__bottom-description {

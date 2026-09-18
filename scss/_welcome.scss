@@ -63,19 +63,27 @@
 		}
 
 		@media (max-width: 1400px) {
-			bottom: -20rem;
-			max-width: 100%;
+			bottom: -25rem;
+			width: 100%;
+			max-width: none;
 		}
 		@media (max-width: 1200px) {
+			bottom: -21rem;
+		}
+		@media (max-width: 992px) {
 			bottom: -18rem;
 		}
 		@media (max-width: 768px) {
-			bottom: -14rem;
-			max-width: 135%;
+			bottom: -10rem;
+			left: 70%;
+			transform: translateX(-50%);
+			width: 110%;
+			max-width: none;
 		}
 		@media (max-width: 480px) {
 			bottom: -10rem;
-			max-width: 130%;
+			width: 130%;
+			max-width: none;
 		}
 	}
 
@@ -107,6 +115,9 @@
 					top: -8rem;
 					left: -2rem;
 				}
+				@media (max-width: 480px) {
+					top: -5rem;
+				}
 			}
 
 			&.main-cloud {
@@ -119,7 +130,12 @@
 					top: 2.5rem;
 				}
 				@media (max-width: 768px) {
-					width: 95vw;
+					width: 100vw;
+					left: 47%;
+					top: 3rem;
+				}
+				@media (max-width: 480px) {
+					top: 5rem;
 				}
 			}
 			&.right-cloud {

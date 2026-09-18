@@ -98,13 +98,34 @@ section {
 	position: absolute;
 	right: -55rem;
 	bottom: -10rem;
-	max-width: 100%;
+	max-width: 90%;
 	height: auto;
 	will-change: transform;
 	transform: rotate(5deg);
 
 	@media (max-width: 1400px) {
-		bottom: -10rem;
-		max-width: 100%;
+		bottom: -15rem;
+		max-width: 90%;
+		right: -45rem;
+	}
+	@media (max-width: 1200px) {
+		max-width: none;
+		right: -35rem;
+		width: 100%;
+	}
+	@media (max-width: 992px) {
+		right: -45rem;
+		width: 140%;
+		bottom: -15rem;
+	}
+	@media (max-width: 768px) {
+		max-width: none;
+		right: -35rem;
+		width: 170%;
+	}
+	@media (max-width: 480px) {
+		max-width: none;
+		right: -33rem;
+		width: 170%;
 	}
 }

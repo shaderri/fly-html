@@ -141,17 +141,17 @@ document.addEventListener('DOMContentLoaded', event => {
 
 	gsap.fromTo(
 		'.luxury-flights__image',
-		{ scale: 0.9, x: 150, opacity: 0.7 },
+		{ scale: 0.9, x: 100, opacity: 0.7 },
 		{
-			x: -500,
+			x: -300,
 			scale: 1.2,
-			top: -10,
+			y: -10,
 			opacity: 1,
 			ease: 'none',
 			scrollTrigger: {
 				trigger: '.luxury-flights__image',
 				start: 'top 45%',
-				end: '+=100%',
+				end: '+=150%',
 				scrub: true,
 				immediateRender: false
 			}
